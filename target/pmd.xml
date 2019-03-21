@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2019-03-21T20:15:44.430">
+<file name="C:\Users\zovtopuz\eclipse-workspace\Auto1\src\main\java\ua\lviv\iot\Auto\Manager\AutoManagerImpl.java">
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="39" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="ua.lviv.iot.Auto.Manager" class="AutoManagerImpl" method="findGraduationYear" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.util.List' due to existing import 'java.util.List'
+</violation>
+<violation beginline="18" endline="18" begincolumn="12" endcolumn="31" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="ua.lviv.iot.Auto.Manager" class="AutoManagerImpl" method="findWheelDiameter" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.util.List' due to existing import 'java.util.List'
+</violation>
+<violation beginline="23" endline="23" begincolumn="12" endcolumn="31" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="ua.lviv.iot.Auto.Manager" class="AutoManagerImpl" method="sortByPrice" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.util.List' due to existing import 'java.util.List'
+</violation>
+<violation beginline="23" endline="23" begincolumn="45" endcolumn="64" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="ua.lviv.iot.Auto.Manager" class="AutoManagerImpl" method="sortByPrice" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary use of fully qualified name 'java.util.List' due to existing import 'java.util.List'
+</violation>
+</file>
+</pmd>

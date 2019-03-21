@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="uk"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AutoManagerImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">home</a> &gt; <a href="index.source.html" class="el_package">ua.lviv.iot.Auto.Manager</a> &gt; <span class="el_source">AutoManagerImpl.java</span></div><h1>AutoManagerImpl.java</h1><pre class="source lang-java linenums">package ua.lviv.iot.Auto.Manager;
+
+import ua.lviv.iot.Auto.Auto;
+
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+
+<span class="nc" id="L9">public class AutoManagerImpl implements AutoManager &lt;Object&gt; {</span>
+
+	 @Override
+
+	    public java.util.List&lt;Auto&gt; findGraduationYear(List&lt;Auto&gt; list, String graduationYear) {
+<span class="nc" id="L14">	        return list;</span>
+	    }
+
+    @Override
+    public java.util.List&lt;Auto&gt; findWheelDiameter(List&lt;Auto&gt; list, String wheelDiameter) {
+<span class="nc" id="L19">    	return list;</span>
+    }
+
+
+    public java.util.List&lt;Auto&gt; sortByPrice(java.util.List&lt;Auto&gt; list, boolean sortGoods) {
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        if(sortGoods == true) {</span>
+<span class="nc" id="L25">            list.sort(Comparator.comparing(Auto::getPrice));</span>
+        }
+
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        if(sortGoods == false) {</span>
+<span class="nc" id="L29">            list.sort(Comparator.comparing(Auto::getPrice).reversed());</span>
+        }
+<span class="nc" id="L31">        return list;</span>
+    }
+
+    public LinkedList&lt;Auto&gt; sortColor(LinkedList&lt;Auto&gt; list, boolean sortGoods){
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        if(sortGoods == true) {</span>
+<span class="nc" id="L36">            list.sort(Comparator.comparing(Auto::getColor));</span>
+        }
+
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        if(sortGoods == false) {</span>
+<span class="nc" id="L40">            list.sort(Comparator.comparing(Auto::getColor).reversed());</span>
+        }
+<span class="nc" id="L42">        return list;</span>
+    }
+
+	@Override
+	public List&lt;Auto&gt; sortByPrice(List&lt;Auto&gt; list, int sortGoods) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L48">		return null;</span>
+	}
+
+	@Override
+	public List&lt;Auto&gt; sortByColor(List&lt;Auto&gt; list, boolean sortGoods) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L54">		return null;</span>
+	}
+}
+	
+
+
+	
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
