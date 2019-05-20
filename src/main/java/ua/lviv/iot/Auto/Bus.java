@@ -1,33 +1,28 @@
 package ua.lviv.iot.Auto;
 
 public class Bus extends Auto {
-	private int numberOfWindows;
+    private int numberOfWindows;
     private int numberOfStandingPlaces;
-    private CarBrand tyeOfCarBrand;
-    ;
-;
-
-    public Bus(String color, String wheelDiameter, int price, String graduationYear) {
+    
+	public Bus(String color, String wheelDiameter, int price, String graduationYear, int numberOfWindows,
+			int numberOfStandingPlaces) {
 		super(color, wheelDiameter, price, graduationYear);
-		// TODO Auto-generated constructor stub
-    }
-	public int getNumberOfWindows() {
-		return numberOfWindows;
-	}
-	public void setNumberOfWindows(int numberOfWindows) {
 		this.numberOfWindows = numberOfWindows;
-	}
-	public int getNumberOfStandingPlaces() {
-		return numberOfStandingPlaces;
-	}
-	public void setNumberOfStandingPlaces(int numberOfStandingPlaces) {
 		this.numberOfStandingPlaces = numberOfStandingPlaces;
-	}
-	public CarBrand getTyeOfCarBrand() {
-		return tyeOfCarBrand;
-	}
-	public void setTyeOfCarBrand(CarBrand tyeOfCarBrand) {
-		this.tyeOfCarBrand = tyeOfCarBrand;
-	}
+        }
 
-}
+	public final int getNumberOfWindows() {
+        return numberOfWindows;
+        }
+    public final void setNumberOfWindows(final int numberOfWindows) {
+        this.numberOfWindows = numberOfWindows;
+        }
+    public final int getNumberOfStandingPlaces() {
+        return numberOfStandingPlaces;
+        }
+    public final void setNumberOfStandingPlaces
+    (final int numberOfStandingPlaces) {
+        this.numberOfStandingPlaces = numberOfStandingPlaces;
+        }
+   
+    }

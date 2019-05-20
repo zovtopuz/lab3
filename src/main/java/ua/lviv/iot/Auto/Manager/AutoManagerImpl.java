@@ -6,32 +6,35 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class AutoManagerImpl implements AutoManager <Object> {
+public class AutoManagerImpl  {
 
-	 @Override
-
-	    public java.util.List<Auto> findGraduationYear(List<Auto> list, String graduationYear) {
-	        return list;
-	    }
-
-    @Override
-    public java.util.List<Auto> findWheelDiameter(List<Auto> list, String wheelDiameter) {
-    	return list;
-    }
-
-
-    public java.util.List<Auto> sortByPrice(java.util.List<Auto> list, boolean sortGoods) {
-        if(sortGoods == true) {
-            list.sort(Comparator.comparing(Auto::getPrice));
+	LinkedList<Auto> list = new LinkedList<Auto>(); 
+	
+    public final List<Auto> findGraduationYear(
+            final List<Auto> list, final String graduationYear) {
+        return list;
         }
 
+  
+    public final List<Auto> findWheelDiameter(
+            final List<Auto> list, final String wheelDiameter) {
+        return list;
+        }
+
+
+    public static List<Auto> sortByPrice(
+             List<Auto> list, final boolean sortGoods) {
+if(sortGoods == true) {
+            list.sort(Comparator.comparing(Auto::getPrice));
+        }
         if(sortGoods == false) {
             list.sort(Comparator.comparing(Auto::getPrice).reversed());
         }
         return list;
     }
 
-    public LinkedList<Auto> sortColor(LinkedList<Auto> list, boolean sortGoods){
+    public static List<Auto> sortColor(
+             List<Auto> list, final boolean sortGoods) {
         if(sortGoods == true) {
             list.sort(Comparator.comparing(Auto::getColor));
         }
@@ -42,19 +45,5 @@ public class AutoManagerImpl implements AutoManager <Object> {
         return list;
     }
 
-	@Override
-	public List<Auto> sortByPrice(List<Auto> list, int sortGoods) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public List<Auto> sortByColor(List<Auto> list, boolean sortGoods) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-}
-	
-
-
-	
+    }

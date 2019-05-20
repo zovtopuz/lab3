@@ -6,67 +6,69 @@ public class Auto {
     private String wheelDiameter;
     private int price;
     private String graduationYear;
-	
-    
-    public Auto(String color, String wheelDiameter, int price, String graduationYear) {
-<span class="nc" id="L12">		super();</span>
-<span class="nc" id="L13">		this.color = color;</span>
-<span class="nc" id="L14">		this.wheelDiameter = wheelDiameter;</span>
-<span class="nc" id="L15">		this.price = price;</span>
-<span class="nc" id="L16">		this.graduationYear = graduationYear;</span>
-<span class="nc" id="L17">	}</span>
+
+    public Auto(final String color, final String wheelDiameter,
+            final int price, final String graduationYear) {
+<span class="nc" id="L12">        super();</span>
+<span class="nc" id="L13">        this.color = color;</span>
+<span class="nc" id="L14">        this.wheelDiameter = wheelDiameter;</span>
+<span class="nc" id="L15">        this.price = price;</span>
+<span class="nc" id="L16">        this.graduationYear = graduationYear;</span>
+<span class="nc" id="L17">    }</span>
 
 
-	@Override
-	public String toString() {
-<span class="nc" id="L22">		return &quot;Auto [color=&quot; + color + &quot;, wheelDiameter=&quot; + wheelDiameter + &quot;, price=&quot; + price + &quot;, graduationYear=&quot;</span>
-				+ graduationYear + &quot;]&quot;;
-	}
+    @Override
+    public final String toString() {
+<span class="nc" id="L22">        return &quot;Auto [color=&quot; + color</span>
+                + &quot;, wheelDiameter=&quot; + wheelDiameter
+                + &quot;, price=&quot; + price + &quot;, graduationYear=&quot;
+                + graduationYear + &quot;]&quot;;
+        }
 
 
-	public String getColor() {
-<span class="nc" id="L28">		return color;</span>
-	}
+    public final String getColor() {
+<span class="nc" id="L30">        return color;</span>
+        }
 
 
-	public void setColor(String color) {
-<span class="nc" id="L33">		this.color = color;</span>
-<span class="nc" id="L34">	}</span>
+    public final  void setColor(final String color) {
+<span class="nc" id="L35">        this.color = color;</span>
+<span class="nc" id="L36">        }</span>
 
 
-	public String getWheelDiameter() {
-<span class="nc" id="L38">		return wheelDiameter;</span>
-	}
+    public final String getWheelDiameter() {
+<span class="nc" id="L40">        return wheelDiameter;</span>
+        }
 
 
-	public void setWheelDiameter(String wheelDiameter) {
-<span class="nc" id="L43">		this.wheelDiameter = wheelDiameter;</span>
-<span class="nc" id="L44">	}</span>
+    public final void setWheelDiameter(final String wheelDiameter) {
+<span class="nc" id="L45">        this.wheelDiameter = wheelDiameter;</span>
+<span class="nc" id="L46">        }</span>
 
 
-	public int getPrice() {
-<span class="nc" id="L48">		return price;</span>
-	}
+    public final int getPrice() {
+<span class="nc" id="L50">        return price;</span>
+        }
 
 
-	public void setPrice(int price) {
-<span class="nc" id="L53">		this.price = price;</span>
-<span class="nc" id="L54">	}</span>
+    public final void  setPrice(final int price) {
+<span class="nc" id="L55">        this.price = price;</span>
+<span class="nc" id="L56">        }</span>
 
 
-	public String getGraduationYear() {
-<span class="nc" id="L58">		return graduationYear;</span>
-	}
+    public final String getGraduationYear() {
+<span class="nc" id="L60">        return graduationYear;</span>
+        }
 
 
-	public void setGraduationYear(String graduationYear) {
-<span class="nc" id="L63">		this.graduationYear = graduationYear;</span>
-<span class="nc" id="L64">	}</span>
+    public final void setGraduationYear(final String graduationYear) {
+<span class="nc" id="L65">        this.graduationYear = graduationYear;</span>
+<span class="nc" id="L66">        }</span>
 
 
-	public static Object stream() {
-		// TODO Auto-generated method stub
-<span class="nc" id="L69">		return null;</span>
-	}
-}
+    public static Object stream() {
+        // TODO Auto-generated method stub
+<span class="nc" id="L71">        return null;</span>
+        }
+    }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

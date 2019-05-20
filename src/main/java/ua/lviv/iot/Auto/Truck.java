@@ -1,37 +1,30 @@
 package ua.lviv.iot.Auto;
 
 public class Truck extends Auto {
-	private int weight;
+    private int weight;
     private int numberOfWheels;
-    private Motor tyeOfMotor;
 
-    public Truck(String color, String wheelDiameter, int price, String graduationYear) {
+    public Truck(String color, String wheelDiameter, int price, String graduationYear, int weight, int numberOfWheels) {
 		super(color, wheelDiameter, price, graduationYear);
-		// TODO Auto-generated constructor stub
-	}
+		this.weight = weight;
+		this.numberOfWheels = numberOfWheels;
+         }
 
 	public int getWeight() {
-		return weight;
-	}
+        return weight;
+        }
 
-	public void setWeight(int weight) {
-		this.weight = weight;
-	}
+    public void setWeight(int weight) {
+        this.weight = weight;
+        }
 
-	public int getNumberOfWheels() {
-		return numberOfWheels;
-	}
+    public int getNumberOfWheels() {
+        return numberOfWheels;
+        }
 
-	public void setNumberOfWheels(int numberOfWheels) {
-		this.numberOfWheels = numberOfWheels;
-	}
-
-	public Motor getTyeOfMotor() {
-		return tyeOfMotor;
-	}
-
-	public void setTyeOfMotor(Motor tyeOfMotor) {
-		this.tyeOfMotor = tyeOfMotor;
-	}
+    public void setNumberOfWheels(int numberOfWheels) {
+        this.numberOfWheels = numberOfWheels;
+        }
 
 }
+    
