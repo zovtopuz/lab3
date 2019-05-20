@@ -7,8 +7,8 @@ public class Auto {
     private int price;
     private String graduationYear;
 
-    public Auto(final String color, final String wheelDiameter,
-            final int price, final String graduationYear) {
+    public Auto( String color,  String wheelDiameter,
+             int price,  String graduationYear) {
         super();
         this.color = color;
         this.wheelDiameter = wheelDiameter;
@@ -16,55 +16,65 @@ public class Auto {
         this.graduationYear = graduationYear;
     }
 
-
-    @Override
-    public final String toString() {
-        return "Auto [color=" + color
-                + ", wheelDiameter=" + wheelDiameter
-                + ", price=" + price + ", graduationYear="
-                + graduationYear + "]";
+        public String getHeaders() {
+            return "color" + ","
+                    + "wheelDiameter" + ","
+                    + "price" + ","
+                    + "graduationYear"+ ",";
         }
 
+        public String toCSV() {
+            return this.color + ","
+                    + this.wheelDiameter + ","
+                    + this.price + ","
+                    + this.graduationYear;
+        }
+        
 
-    public final String getColor() {
+
+    public String getColor() {
         return color;
-        }
-
-
-    public final  void setColor(final String color) {
-        this.color = color;
-        }
-
-
-    public final String getWheelDiameter() {
-        return wheelDiameter;
-        }
-
-
-    public final void setWheelDiameter(final String wheelDiameter) {
-        this.wheelDiameter = wheelDiameter;
-        }
-
-
-    public final int getPrice() {
-        return price;
-        }
-
-
-    public final void  setPrice(final int price) {
-        this.price = price;
-        }
-
-
-    public final String getGraduationYear() {
-        return graduationYear;
-        }
-
-
-    public final void setGraduationYear(final String graduationYear) {
-        this.graduationYear = graduationYear;
-        }
-
-
-  
     }
+
+
+    public void setColor( String color) {
+        this.color = color;
+    }
+
+
+    public String getWheelDiameter() {
+        return wheelDiameter;
+    }
+
+
+    public void setWheelDiameter( String wheelDiameter) {
+        this.wheelDiameter = wheelDiameter;
+    }
+
+
+    public int getPrice() {
+        return price;
+    }
+
+
+    public void setPrice( int price) {
+        this.price = price;
+    }
+
+
+    public String getGraduationYear() {
+        return graduationYear;
+    }
+
+
+    public void setGraduationYear( String graduationYear) {
+        this.graduationYear = graduationYear;
+    }
+    
+    @Override
+	public String toString() {
+		return "Auto [color=" + color + ", wheelDiameter=" + wheelDiameter + ", price=" + price + ", graduationYear="
+				+ graduationYear + "]";
+		}
+
+}

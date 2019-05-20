@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2019</copyright>
     <item>
       <title>File: 10,
-             Errors: 145,
+             Errors: 118,
              Warnings: 0,
              Infos: 0
       </title>
@@ -47,6 +47,20 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.Auto.Manager.AutoManagerImpl.java">ua/lviv/iot/Auto/Manager/AutoManagerImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#Main.java">Main.java</a>
                 </td>
                 <td>
                   0
@@ -111,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  16
                 </td>
               </tr>
                           <tr>
@@ -139,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  25
+                  24
                 </td>
               </tr>
                           <tr>
@@ -167,21 +181,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  28
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.Main.java">ua/lviv/iot/Main.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  25
+                  15
                 </td>
               </tr>
                       </tbody>

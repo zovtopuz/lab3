@@ -6,56 +6,56 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-<span class="nc" id="L9">public class AutoManagerImpl implements AutoManager&lt;Object&gt; {</span>
+<span class="nc" id="L9">public class AutoManagerImpl implements AutoManager &lt;Object&gt; {</span>
+
+	 @Override
+
+	    public java.util.List&lt;Auto&gt; findGraduationYear(List&lt;Auto&gt; list, String graduationYear) {
+<span class="nc" id="L14">	        return list;</span>
+	    }
 
     @Override
-    public final List&lt;Auto&gt; findGraduationYear(
-            final List&lt;Auto&gt; list, final String graduationYear) {
-<span class="nc" id="L14">        return list;</span>
-        }
-
-    @Override
-    public final List&lt;Auto&gt; findWheelDiameter(
-            final List&lt;Auto&gt; list, final String wheelDiameter) {
-<span class="nc" id="L20">        return list;</span>
-        }
-
-
-    public final List&lt;Auto&gt; sortByPrice(
-            final List&lt;Auto&gt; list, final boolean sortGoods) {
-<span class="nc bnc" id="L26" title="All 2 branches missed.">        if(sortGoods == true){</span>
-<span class="nc" id="L27">            list.sort(Comparator.comparing(Auto::getPrice));</span>
-        }
-<span class="nc bnc" id="L29" title="All 2 branches missed.">        if(sortGoods == false){</span>
-<span class="nc" id="L30">            list.sort(Comparator.comparing(Auto::getPrice).reversed());</span>
-        }
-<span class="nc" id="L32">        return list;</span>
+    public java.util.List&lt;Auto&gt; findWheelDiameter(List&lt;Auto&gt; list, String wheelDiameter) {
+<span class="nc" id="L19">    	return list;</span>
     }
 
-    public final LinkedList&lt;Auto&gt; sortColor(
-            final LinkedList&lt;Auto&gt; list, final boolean sortGoods) {
-<span class="nc bnc" id="L37" title="All 2 branches missed.">        if(sortGoods == true){</span>
-<span class="nc" id="L38">            list.sort(Comparator.comparing(Auto::getColor));</span>
+
+    public java.util.List&lt;Auto&gt; sortByPrice(java.util.List&lt;Auto&gt; list, boolean sortGoods) {
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        if(sortGoods == true) {</span>
+<span class="nc" id="L25">            list.sort(Comparator.comparing(Auto::getPrice));</span>
         }
 
-<span class="nc bnc" id="L41" title="All 2 branches missed.">        if(sortGoods == false) {</span>
-<span class="nc" id="L42">            list.sort(Comparator.comparing(Auto::getColor).reversed());</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        if(sortGoods == false) {</span>
+<span class="nc" id="L29">            list.sort(Comparator.comparing(Auto::getPrice).reversed());</span>
         }
-<span class="nc" id="L44">        return list;</span>
+<span class="nc" id="L31">        return list;</span>
     }
 
-    @Override
-    public final List&lt;Auto&gt; sortByPrice(
-            final List&lt;Auto&gt; list, final int sortGoods) {
-        // TODO Auto-generated method stub
-<span class="nc" id="L51">        return null;</span>
+    public LinkedList&lt;Auto&gt; sortColor(LinkedList&lt;Auto&gt; list, boolean sortGoods){
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        if(sortGoods == true) {</span>
+<span class="nc" id="L36">            list.sort(Comparator.comparing(Auto::getColor));</span>
         }
 
-    @Override
-    public final List&lt;Auto&gt; sortByColor(
-            final List&lt;Auto&gt; list, final boolean sortGoods) {
-        // TODO Auto-generated method stub
-<span class="nc" id="L58">        return null;</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        if(sortGoods == false) {</span>
+<span class="nc" id="L40">            list.sort(Comparator.comparing(Auto::getColor).reversed());</span>
         }
+<span class="nc" id="L42">        return list;</span>
     }
+
+	@Override
+	public List&lt;Auto&gt; sortByPrice(List&lt;Auto&gt; list, int sortGoods) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L48">		return null;</span>
+	}
+
+	@Override
+	public List&lt;Auto&gt; sortByColor(List&lt;Auto&gt; list, boolean sortGoods) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L54">		return null;</span>
+	}
+}
+	
+
+
+	
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
